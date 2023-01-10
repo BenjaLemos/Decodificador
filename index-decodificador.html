@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-initial-scale=1.0->
+        <meta name="author" content="Benjamim Lemos">
+        <meta name="description" content="Codifica e Decodifica uma Mensagem">
+        <title>Codificador&Decodificador</title>
+        
+        <link rel="stylesheet" href="reset.css"> <!-limpa navegador->
+        <!- <link rel="stylesheet" href="style.css"> ->
+    </head>
+    
+    <body>
+        <header>
+            <img src="logo.png" alt="Logo do Decodificador">
+        </header>
+
+        <main>                          
+            <label for="comentario">Comentário:</label>
+            <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
+            <button class="fazerComentario">Fazer comentário</button>
+
+            <p class="pComentario"></p>
+        </main>
+
+        <footer>
+
+        </footer>
+
+    </body>
+
+    <script>
+        //* ('.fazerComentario').on('click', adicionarTexto) **//
+        var button = document.querySelector("button");
+        button.onclick = adicionarTexto;
+
+        function adicionarTexto() {
+             var valorDoComentario = $('#comentario').val()
+        
+            $('.pComentario').text(valorDoComentario)
+        }
+
+    </script>
+</html>
