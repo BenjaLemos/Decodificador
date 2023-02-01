@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-initial-scale=1.0->
+
+
+        <meta name="author" content="Benjamim Lemos dos Santos">
+        <meta name="description" content="Codifica e Decodifica uma Mensagem">
+        
+        <link rel="stylesheet" href="reset.css"> <!- limpa navegador ->
+        <link rel="stylesheet" href="style.css">
+        <title>Codificador&Decodificador</title>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">  <!-link para font externa, pública do google ->
+
+    </head>
+    
+    <body>
+        <header>
+            <img src="logo-alura.png" alt="Logo da Alura">
+        </header>
+
+        <main>
+            <section>
+                <textarea class="text-area" cols="30" rows="10" placeholder="Digite Mensagem para Codificar"></textarea>    
+
+                <div>
+                    <h6 class="informacao">somente letras minúsculas e sem acento</h6>
+                </div>
+
+                <div class="botoes">
+                    <button class="btn-codificar" onclick="btnEncriptar()">Codificar</button>
+                    <button class="btn-decodificar" onclick="btnDesencriptar()">Decodificar</button>                    
+                </div>
+            </section>
+
+            <section>
+                <textarea class="mensagem" cols="30" rows="10"></textarea>  
+                <button class="btn-copiar" onclick="btnCopiar()">Copiar</button>
+            </section>
+
+        </main>
+
+        <script src="main.js"></script>
+
+        <footer>
+            <p class="copyright">&copy; Copyright Benjamim Lemos dos Santos - 2023</p>
+        </footer>
+
+    </body>
+
+</html>
